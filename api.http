@@ -1,0 +1,65 @@
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "secret123"
+}
+
+
+###
+POST http://localhost:3000/partners
+Content-Type: application/json
+
+{
+  "name": "Cinema XYZ",
+  "email": "john.doe@example.com",
+  "password": "secret123",
+  "company_name": "Cinema XYZ Ltda"
+}
+
+
+###
+POST http://localhost:3000/costumers
+Content-Type: application/json
+
+{
+  "name": "Cinema XYZ",
+  "email": "john.doe@example.com",
+  "password": "secret123",
+  "address": "Cinema XYZ Ltda teste",
+  "telefone": "123456789"
+}
+
+
+###
+POST http://localhost:3000/partners/events
+Content-Type: application/json
+
+{
+  "name": "Cinema XYZ",
+  "description": "Evento de teste",
+  "date": "2024-07-01T20:00:00Z",
+  "location":"Cinema XYZ Ltda teste",
+  
+}
+
+
+### Listagem de eventos do parceiro
+GET  http://localhost:3000/partners/events
+
+
+
+### Listagem de detalhes de um evento específico do parceiro
+GET http://localhost:3000/partners/events/1000
+
+
+
+### Listagem de eventos públicos
+GET  http://localhost:3000/events
+
+
+### Listagem de detalhes de um evento específico público
+GET http://localhost:3000/events/1000
+
+
