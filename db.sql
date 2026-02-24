@@ -1,4 +1,4 @@
-use tickest;
+use tickets;
 
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` VARCHAR(255) NOT NULL,
   `created_at` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
 
 CREATE TABLE IF NOT EXISTS `partners` (
